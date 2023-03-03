@@ -13,7 +13,11 @@ public class TestFirstReq
     [InlineData("---Bem-vindo ao Guessing Game--- /n Para começar, tente adivinhar o número que eu pensei, entre -100 e 100!")]
     public void TestGreet(string expected)
     {
-        throw new NotImplementedException();
+        var greeting = new GuessNumber();
+
+        greeting.Greet();
+
+        greeting.Should().Be(expected);
     }
 
     [Theory(DisplayName = "Deve receber a entrada do usuário e converter para int")]
