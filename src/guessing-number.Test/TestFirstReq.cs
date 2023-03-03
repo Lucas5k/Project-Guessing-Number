@@ -29,7 +29,10 @@ public class TestFirstReq
     [InlineData("0", 0)]
     public void TestReceiveUserInputAndConvert(string entry, int expected)
     {
-        throw new NotImplementedException();
+        var convert = new GuessNumber();
+        convert.ChooseNumber(entry);
+
+        convert.Should().Be(expected);
     }
 
     [Theory(DisplayName = "Deve retornar mensagem de errro quando entrada não for inteiro.")]
