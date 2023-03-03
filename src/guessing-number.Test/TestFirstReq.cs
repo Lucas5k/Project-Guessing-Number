@@ -13,9 +13,7 @@ public class TestFirstReq
     [InlineData("---Bem-vindo ao Guessing Game--- /n Para começar, tente adivinhar o número que eu pensei, entre -100 e 100!")]
     public void TestGreet(string expected)
     {
-        var greeting = new GuessNumber();
-
-        greeting.Greet();
+        var greeting = new GuessNumber().Greet();
 
         greeting.Should().Be(expected);
     }

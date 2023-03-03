@@ -4,7 +4,6 @@ using FluentAssertions;
 
 namespace guessing_number.Test.Test;
 
-[Collection("Sequential")]
 public class TestPrintInitialMessageSuccess
 {
     [Trait("Category", "1 - Imprima uma mensagem de saudação e seu teste")]

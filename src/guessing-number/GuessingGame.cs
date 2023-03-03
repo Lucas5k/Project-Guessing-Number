@@ -19,29 +19,14 @@ public class GuessNumber
     public int userValue;
     public int randomValue;
 
-
     public string Greet()
     {
-        return "---Bem-vindo ao Guessing Game---Para começar, tente adivinhar o número que eu pensei, entre -100 e 100!";
+        return "---Bem-vindo ao Guessing Game--- /n Para começar, tente adivinhar o número que eu pensei, entre -100 e 100!";
     }
 
     public string ChooseNumber(string userEntry)
     {
-        int convertToInt;
-        int userValue;
-        bool isNumber = int.TryParse(userEntry, out convertToInt);
-
-        if(!isNumber) {
-            return "Entrada inválida! Não é um número.";
-        }
-
-        if(convertToInt <= -100 && convertToInt >= 100) {
-            userValue = 0;
-            return "Entrada inválida! Valor não está no range.";
-        }
-
-        userValue = convertToInt;
-        return "Número escolhido!";
+        throw new NotImplementedException();
     }
 
     public string RandomNumber()

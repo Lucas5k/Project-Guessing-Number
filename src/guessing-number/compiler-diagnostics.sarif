@@ -20,31 +20,10 @@
               "resultFile": {
                 "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-guessing-number/src/guessing-number/GuessingGame.cs",
                 "region": {
-                  "startLine": 23,
+                  "startLine": 22,
                   "startColumn": 19,
-                  "endLine": 23,
+                  "endLine": 22,
                   "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'ChooseNumber' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/lucascabral/Documents/todos-projetos/Acelera%C3%A7%C3%A3o%20C%23/acc-csharp-011-project-guessing-number/src/guessing-number/GuessingGame.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 19,
-                  "endLine": 28,
-                  "endColumn": 31
                 }
               }
             }
