@@ -43,7 +43,9 @@ public class GuessNumber
 
     public string RandomNumber()
     {
-        throw new NotImplementedException();
+        randomValue = random.GetInt(-100, 100);
+
+        return "A máquina escolheu um número de -100 à 100!";
     }
 
     public string AnalyzePlay()

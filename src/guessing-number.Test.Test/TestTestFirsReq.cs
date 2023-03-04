@@ -32,7 +32,7 @@ public class TestPrintInitialMessageSuccess
     }
 }
 
-[Collection("Sequential"), Trait("type", "unit")]
+[Collection("Sequential")]
 public class TestReceiveUserInputAndConvertSuccess
 {
     [Trait("Category", "2 - Receba a entrada da pessoa usuária e converta para Int")]

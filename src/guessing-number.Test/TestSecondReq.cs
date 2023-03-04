@@ -14,7 +14,13 @@ public class TestSecondReq
     [InlineData(-100, 100)]
     public void TestRandomlyChooseANumber(int MinimumRange, int MaximumRange)
     {
-        throw new NotImplementedException();
+        GuessNumber random = new();
+        random.randomValue.Should().Be(0);
+
+        random.RandomNumber();
+
+        random.randomValue.Should().BeInRange(MinimumRange, MaximumRange);
+        random.RandomNumber().Should().Be("A máquina escolheu um número de -100 à 100!");
     }
 
     [Theory(DisplayName = "Deve comparar a entrada do usuário em um caso MENOR")]
