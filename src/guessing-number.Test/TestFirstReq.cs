@@ -27,10 +27,13 @@ public class TestFirstReq
     [InlineData("0", 0)]
     public void TestReceiveUserInputAndConvert(string entry, int expected)
     {
-        var convert = new GuessNumber();
-        convert.ChooseNumber(entry);
+        GuessNumber instance = new();
 
-        convert.Should().Be(expected);
+        instance.ChooseNumber(entry);
+
+        var response = instance.userValue;
+
+        response.Should().Be(expected);
     }
 
     [Theory(DisplayName = "Deve retornar mensagem de errro quando entrada não for inteiro.")]
@@ -41,7 +44,9 @@ public class TestFirstReq
     [InlineData("trybe")]
     public void TestReceiveUserInputAndVerifyType(string entry)
     {
-        throw new NotImplementedException();
+        var convert = new GuessNumber().ChooseNumber(entry);
+
+        convert.Should().Be("Entrada inválida! Não é um número.");
     }
 
     [Theory(DisplayName = "Deve receber a entrada do usuário e garantir que está entre -100 e 100!")]
@@ -52,6 +57,8 @@ public class TestFirstReq
     [InlineData("9999")]
     public void TestReceiveUserInputAndVerifyRange(string entry)
     {
-        throw new NotImplementedException();
+        var convert = new GuessNumber().ChooseNumber(entry);
+
+        convert.Should().Be("Entrada inválida! Valor não está no range.");
     }
 }

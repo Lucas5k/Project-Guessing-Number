@@ -26,7 +26,19 @@ public class GuessNumber
 
     public string ChooseNumber(string userEntry)
     {
-        throw new NotImplementedException();
+        bool isNumber = int.TryParse(userEntry, out int convertToInt);
+
+        if(!isNumber) {
+            return "Entrada inválida! Não é um número.";
+        }
+
+        if(convertToInt < -100 || convertToInt > 100) {
+            return "Entrada inválida! Valor não está no range.";
+        }
+        else {
+            userValue = convertToInt;
+        }
+        return "Número escolhido!";
     }
 
     public string RandomNumber()
