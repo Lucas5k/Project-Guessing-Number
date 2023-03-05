@@ -31,7 +31,22 @@ public class TestSecondReq
     [InlineData(50, 0)]
     public void TestProgramComparisonValuesLess(int mockValue, int entry)
     {
-        throw new NotImplementedException();
+        GuessNumber instance = new();
+
+        instance.AnalyzePlay();
+
+        instance.userValue.Should().Be(0);
+        instance.randomValue.Should().Be(0);
+
+        var mock = new Moq.Mock<IRandomGenerator>();
+        mock.Setup(m => m.GetInt(-100, 100)).Returns(mockValue);
+
+        instance.randomValue = mock.Object.GetInt(-100, 100);
+        var convertToString = Convert.ToString(entry);
+
+        instance.ChooseNumber(convertToString);
+
+        instance.AnalyzePlay().Should().Be("Tente um número MAIOR");
     }
     [Theory(DisplayName = "Deve comparar a entrada do usuário em um caso MAIOR")]
     [InlineData(50, 60)]
@@ -41,7 +56,21 @@ public class TestSecondReq
     [InlineData(50, 77)]
     public void TestProgramComparisonValuesBigger(int mockValue, int entry)
     {
-        throw new NotImplementedException();
+        GuessNumber instance = new();
+
+        instance.AnalyzePlay();
+
+        instance.userValue.Should().Be(0);
+        instance.randomValue.Should().Be(0);
+
+        var mock = new Moq.Mock<IRandomGenerator>();
+        mock.Setup(m => m.GetInt(-100, 100)).Returns(mockValue);
+
+        instance.randomValue = mock.Object.GetInt(-100, 100);
+        var convertToString = Convert.ToString(entry);
+
+        instance.ChooseNumber(convertToString);
+        instance.AnalyzePlay().Should().Be("Tente um número MENOR");
     }
 
     [Theory(DisplayName = "Deve comparar a entrada do usuário em um caso IGUAL")]
@@ -52,6 +81,19 @@ public class TestSecondReq
     [InlineData(77, 77)]
     public void TestProgramComparisonValuesEqual(int mockValue, int entry)
     {
-        throw new NotImplementedException();
-    }
+        GuessNumber instance = new();
+
+        instance.AnalyzePlay();
+
+        instance.userValue.Should().Be(0);
+        instance.randomValue.Should().Be(0);
+
+        var mock = new Moq.Mock<IRandomGenerator>();
+        mock.Setup(m => m.GetInt(-100, 100)).Returns(mockValue);
+
+        instance.randomValue = mock.Object.GetInt(-100, 100);
+        var convertToString = Convert.ToString(entry);
+
+        instance.ChooseNumber(convertToString);
+        instance.AnalyzePlay().Should().Be("ACERTOU!");    }
 }

@@ -50,6 +50,8 @@ public class GuessNumber
 
     public string AnalyzePlay()
     {
-        throw new NotImplementedException();
+        if(userValue < randomValue) return "Tente um número MAIOR";
+        else if(userValue > randomValue) return "Tente um número MENOR";
+        else return "ACERTOU!";
     }
 }

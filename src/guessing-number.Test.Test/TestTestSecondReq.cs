@@ -4,7 +4,7 @@ using FluentAssertions;
 
 namespace guessing_number.Test.Test;
 
-[Collection("Sequential"), Trait("type", "unit")]
+[Collection("Sequential")]
 public class TestRandomlyChooseANumberSuccess
 {
     [Trait("Category", "3 - Gere um número aleatório e seu teste")]
@@ -33,7 +33,7 @@ public class TestRandomlyChooseANumberSuccess
     }
 }
 
-[Collection("Sequential")]
+[Collection("Sequential"), Trait("type", "unit")]
 public class TestProgramComparisonValuesLessSuccess
 {
     [Trait("Category", "4 - Verifique a resposta da jogada e seus testes")]
