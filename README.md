@@ -7,8 +7,7 @@ proposta é uma solução de implementar um jogo para os clientes se divertirem 
 ## :books: Funcionalidades
 <ol><b>Funcionalidade 1</b>: O jogador 1 escolhe um número aleatório.</ol>
 <ol><b>Funcionalidade 2</b>: O jogador 2 tenta adivinhar esse número.</ol>
-<ol><b>Funcionalidade 3</b>: Limpar o quadro.</ol>
-<ol><b>Funcionalidade 4</b>: Tem a opção de aumentar a quantidade de quadros.</ol>
+<ol><b>Funcionalidade 3</b>: O jogador 1 responde se a tentativa do jogador 2 foi correta, abaixo ou acima do número escolhido.</ol>
 
 ## <h3>:wrench: Tecnologias utilizadas</h3>
 * C# Sharp
