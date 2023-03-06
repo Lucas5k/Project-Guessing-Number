@@ -1,11 +1,12 @@
 # Project-Guessing-Number
 
 ## :memo: Descrição
-<p>Esse foi o meu quarto projeto no módulo de Fundamentos. Eu implementei uma página web que contém uma paleta de cores funcional que poderá ser utilizada para criar desenhos em pixels.</p>
+<p>Todos os sistemas desta empresa têm filas longas e as pessoas clientes ficam entediadas enquanto esperam.
+proposta é uma solução de implementar um jogo para os clientes se divertirem enquanto esperam sua vez na fila. é um jogo de Adivinhar o Número!.</p>
 
 ## :books: Funcionalidades
-<ol><b>Funcionalidade 1</b>: Escolher a cor desejada.</ol>
-<ol><b>Funcionalidade 2</b>: Pintar o quadro, com a selecionada.</ol>
+<ol><b>Funcionalidade 1</b>: O jogador 1 escolhe um número aleatório.</ol>
+<ol><b>Funcionalidade 2</b>: O jogador 2 tenta adivinhar esse número.</ol>
 <ol><b>Funcionalidade 3</b>: Limpar o quadro.</ol>
 <ol><b>Funcionalidade 4</b>: Tem a opção de aumentar a quantidade de quadros.</ol>
 
