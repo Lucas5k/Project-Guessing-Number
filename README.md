@@ -2,7 +2,8 @@
 
 ## :memo: Descrição
 <p>Todos os sistemas desta empresa têm filas longas e as pessoas clientes ficam entediadas enquanto esperam.
-proposta é uma solução de implementar um jogo para os clientes se divertirem enquanto esperam sua vez na fila. é um jogo de Adivinhar o Número!.</p>
+proposta é uma solução de implementar um jogo para os clientes se divertirem enquanto esperam sua vez na fila. é um jogo de Adivinhar o Número!
+E no ambito de teste, usei o Xunit.</p>
 
 ## :books: Funcionalidades
 <ol><b>Funcionalidade 1</b>: O jogador 1 escolhe um número aleatório.</ol>
