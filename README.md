@@ -16,18 +16,20 @@
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
 ```
 - Clone o repositório
-git clone git@github.com:Lucas5k/projeto-Pixels-Art.git
+git clone git@github.com:Lucas5k/Project-Guessing-Number.git
 
 - Entre no arquivo do projeto
-cd projeto-Pixels-Art
+cd Project-Guessing-Number
+
+- Usar o projeto
+cd src/
+
+- Rodar os testes
+dotnet test
 
 Use a vontade!
 
 ```
-
-## Rodando na Web:
-
-<a href="https://projeto-pixels-art-tan.vercel.app/">Clique aqui</a><p>para ver a versão final do nosso projeto no seu navegador.</p>
 
 <!-- ## :soon: Implementação futura
 * O que será implementado na próxima sprint? -->
